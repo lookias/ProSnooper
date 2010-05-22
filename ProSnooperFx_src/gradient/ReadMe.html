@@ -1,0 +1,263 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Author" content="Kambiz R. Khojasteh" />
+<style type="text/css">
+<!--
+body, td, th {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10pt;
+}
+a {
+	text-decoration: none;
+	color: #800000;
+}
+a:hover {
+	border-bottom: 1px solid #ff0000;
+}
+.header {
+	color: #ffffff;
+	background-color: #660000;
+	font-size: 24pt;
+	font-weight: bold;
+	padding: 0.5em 0;
+	text-align: center;
+}
+.tags {
+	margin: 0;
+	padding: 0;
+	height: 2em;
+}
+.tags li {
+	color: #ffffff;
+	background-color: #330000;
+	margin: 2px 4px 2px 0;
+	float: left;
+	font-weight: bold;
+	display: block;
+	padding: 0.25em 1em;
+	white-space: nowrap;
+	text-align: center;
+}
+.note {
+	color: #ff0000;
+}
+h3 {
+	clear: both;
+	margin: 1.5em 0 0;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #eeeeee;
+}
+li {
+	margin-bottom: 1em;
+}
+sup {
+	font-size: 0.8em;
+}
+-->
+</style>
+<title>ReadMe</title>
+</head>
+<body>
+<div class="header">TGradient v2.62</div>
+<p>Copyright &copy; <a href="mailto:kambiz@delphiarea.com">Kambiz R. Khojasteh</a>. All rights reserved.<br />
+Get future component updates from <a href="http://www.delphiarea.com">http://www.delphiarea.com</a>.</p>
+<ul class="tags"> 
+  <li>Delphi 3</li>
+  <li>Delphi 4</li>
+  <li>Delphi 5</li>
+  <li>Delphi 6</li>
+  <li>Delphi 7</li>
+  <li>Delphi 2005</li>
+  <li>Delphi 2006</li>
+  <li>Delphi 2007</li>
+  <li>Delphi 2009</li>
+</ul>
+<h3 id="description">DESCRIPTION</h3>
+  <p>TGradient is an extremely fast gradient fill control with a large set of styles. As built-in, TGradient can draw gradient in 24 styles and provides an easily method to define custom styles. In addition, this control can shift and/or rotate the gradient colors, which could be used for creating animated gradients.</p>
+<h3 id="properties">PROPERTIES</h3>
+<ul>
+  <li><strong>BorderColor: TColor</strong><br />Determines the color of the control's border.</li>
+  <li><strong>BorderWidth: TBorderWidth</strong><br />Specifies the width of the control&rsquo;s border.</li>
+  <li><strong>ColorBegin: TColor</strong><br />Determines the initial color of the gradient.</li>
+  <li><strong>ColorEnd: TColor</strong><br />Determines the final color of the gradient.</li>
+  <li><strong>Reverse: Boolean</strong><br />If set to true, logically reverses the value of <em>ColorBegin</em> and <em>ColorEnd</em> properties.</li>
+  <li><strong>Rotation: TGradientRotation<br />TGradientRotation = -100..100</strong><br />Determines the amount of rotation (in percent) of the gradient colors.  When value of this property is positive, direction of rotation is from <em>ColorBegin</em> toward <em>ColorEnd</em>, and for negative values vice versa.</li>
+  <li><strong>Shift: TGradientShift<br />TGradientShift = -100..100</strong><br />Determines the amount of shift (in percent) of the gradient colors. For positive values<em> ColorBegin</em> shifts toward <em>ColorEnd</em>, and for negative values vice versa.</li>
+  <li><strong>Style: TGradientStyle<br />TGradientStyle = (gsCustom, gsRadialC, gsRadialT, gsRadialB, gsRadialL, gsRadialR, gsRadialTL, gsRadialTR, gsRadialBL, gsRadialBR, gsLinearH, gsLinearV, gsReflectedH, gsReflectedV, gsDiagonalLF, gsDiagonalLB, gsDiagonalRF, gsDiagonalRB, gsArrowL, gsArrowR, gsArrowU, gsArrowD, gsDiamond, gsButterfly)</strong><br />Determines how the control fills the client area.<br />
+  <blockquote>
+  <table width="90%" border="0" cellspacing="5" cellpadding="0" align="center">
+      <tr> 
+        <td width="15%" valign="top"><strong>gsCustom</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>When <em>style</em> property is set to this value, the control triggers <em>OnCustom</em> event to get the gradient pattern.</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialC</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Central</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialT</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Top</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialB</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Bottom</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialL</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Left</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialR</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Right</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialTL</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Top Left Corner</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialTR</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Top Right Corner</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialBL</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Bottom Left Corner</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsRadialBR</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Radial - Bottom Right Corner</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsLinearH</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Linear - Horizontal</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsLinearV</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Linear - Vertical</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsReflectedH</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Reflected - Horizontal</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsReflectedV</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Reflected - Vertical</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsDiagonalLF</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Diagonal - Linear - Forward</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsDiagonalLB</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Diagonal - Linear - Backward</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsDiagonalRF</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Diagonal - Reflected - Forward</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsDiagonalRB</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Diagonal - Reflected - Backward</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsArrowL</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Arrow - Left</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsArrowR</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Arrow - Right</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsArrowU</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Arrow - Up</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsArrowD</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Arrow - Down</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsDiamond</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Diamond</td>
+      </tr>
+      <tr> 
+        <td width="15%" valign="top"><strong>gsButterfly</strong></td>
+        <td width="20">&nbsp;</td>
+        <td>Butterfly</td>
+      </tr>
+      <tr>
+        <td valign="top"><strong>gsRadialRect</strong></td>
+        <td>&nbsp;</td>
+        <td>Radial - Rectangular</td>
+      </tr>
+    </table>
+    </blockquote>
+  </li>
+  <li><strong>UseSysColors: Boolean</strong><br />Determines where the control looks for the gradient colors.</li>
+</ul>
+<h3 id="methods">KEY METHODS</h3>
+<ul>
+  <li><strong>procedure BeginUpdate</strong><br />Suspends screen repainting.</li>
+  <li><strong>procedure EndUpdate</strong><br />Re-enables screen repainting.</li>
+  <li><strong>procedure InvalidatePattern</strong><br />Force the control to regenerate the gradient pattern. This method is useful when you are using custom gradient and want to change the pattern to a new one without changing the other properties of the control.</li>
+  <li><strong>function CopyPatternTo(Bitmap: TBitmap): Boolean</strong><br />Copies the gradient pattern in to the specified bitmap. If the pattern is not available, the function returns False.</li>
+</ul>
+<h3 id="events">KEY EVENTS</h3>
+<ul>
+  <li><strong>OnMouseEnter: TNotifyEvent</strong><br />Occurs when the mouse pointer moves over the control.</li>
+  <li><strong>OnMouseLeave: TNotifyEvent</strong><br />Occurs when the mouse pointer moves off from over the control.</li>
+  <li><strong>OnCustom: TCustomGradientEvent<br />TCustomGradientEvent = procedure(Sender: TObject; const Colors: TGradientColors; Pattern: TBitmap) of object<br />TGradientColors = array[0..255] of TRGBTriple</strong><br />When <em>Style</em> property is set to <em>gsCustom</em>, control generates this event to get the gradient pattern. <em>Colors</em> parameter is an array of array of gradient colors, and pattern is a 24bit-format bitmap. In this event, your code should define the dimensions of the pattern and set color of its pixels (for more information, please refer to the components demo).</li>
+</ul>
+<h3 id="history">HISTORY</h3>
+<ul>
+  <li><strong>2.62 (November 18, 2008)</strong><br />- Support for Delphi 2009 added.</li>
+  <li><strong>2.61 (August 11, 2007)</strong><br />- Added <em>gsRadialRect style </em> (Thanks to <a href="mailto:informarco@gmail.com">Marco Bianchini</a>).</li>
+  <li><strong>2.60 (April 6, 2006)</strong><br />-  Added <em>BorderWidth</em> and <em>BorderColor</em> properties (Thanks to <a href="mailto:tkachenkovv@mail.ru">Tkachenko Vadim</a>).<br />- Added <em>OnMouseEnter</em> and <em>OnMouseLeave</em> events (Thanks to <a href="mailto:tkachenkovv@mail.ru">Tkachenko Vadim</a>).<br />- The code of radial gradient styles were optimized (Thanks to <a href="mailto:tkachenkovv@mail.ru">Tkachenko Vadim</a>).</li>
+  <li><strong>2.52.2 (July 27, 2004)</strong><br />- The following styles exchanged: 
+    <br /><br /><ul>
+      <li>Linear Horizontal / Linear Vertical</li>
+      <li>Linear Forward Diagonal / Linear Backward Diagonal</li>
+      <li>Reflected Forward Diagonal / Reflected Backward Diagonal</li>
+    </ul>
+  </li>
+  <li><strong>2.52.1 (June 18, 2004)</strong><br />- The compiler error on Delphi 3 fixed.</li>
+  <li><strong>2.52 (June 17, 2004)</strong><br />- The new property <em>UseSysColors</em> added (Thanks to <a href="mailto:peter.schrooders@bct.nl">Peter Schrooders</a>).<br />- The new method <em>CopyPatternTo</em> added.</li>
+  <li><strong>2.51 (August 15, 2003)</strong><br />- The code of radial gradient styles were optimized (Thanks to <a href="mailto:kiwus@onlinehome.de">Wolfgang Kiwus</a>).</li>
+  <li><strong>2.50 (February 3, 2001)</strong><br />- In this version, the drawing speed increased again.<br />- Some new gradient styles added.<br />- Now, the control supports custom gradient style, and as the result, the event <em>OnCustom</em> added.<br />- Shifting and Rotating operations of the gradient colors and the related properties <em>Shift</em> and <em>Rotation</em> added.<br />- New methods <em>BeginUpdate</em>, <em>EndUpdate</em>, and <em>InvalidatePattern</em> added.<br />- The control does not support 16bit platform anymore.</li>
+  <li><strong>2.00 (December 29, 2001)</strong><br />- The drawing speed increased dramatically.<br />- New gradient fill styles added and the name of older styles changed.</li>
+  <li><strong>1.00 (September 8, 2000)</strong><br />- Initial release.</li>
+</ul>
+<h3 id="license">LICENSE</h3>
+  <p>TGradient component is freeware. You may copy component's files AS LONG AS YOU COPY ALL OF THEM. If you want to change the source code in order to improve the component's features, performance, etc. please send me the new source code so that I can have a look at it. The changed source code should contain descriptions what you have changed, and of course your name. The only thing you MAY NOT CHANGE is the ORIGINAL COPYRIGHT INFORMATION.</p>
+<h3 id="disclaimer">DISCLAIMER</h3>
+  <p>TGradient is provided &quot;AS IS&quot; without any warranty of any kind, either express or implied. The entire risk as to the quality and performance of the software is with you. The author is NOT liable for any DAMAGES resulting from the use and misuse of the component, especially he is NOT liable for DAMAGES that were caused BY ANY VERSION WHICH HAS NOT BEEN PROGRAMMED BY THE AUTHOR HIMSELF.</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%"><hr noshade="noshade" /></td>
+    <td nowrap="nowrap">&nbsp;<sup style="font-size: 6pt;">END OF DOCUMENT</sup></td>
+  </tr>
+</table>
+</body>
+</html>
